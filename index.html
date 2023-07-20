@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+<script src="script.js"></script>
+
+       
+    <title>Resume Builder</title>
+</head>
+<body>
+<!-- ---------------------Resume-form-------------------- -->
+    <div class="container" id="resume-forme">
+        <h1 class="text-center my-2">Resume Builder</h1>
+        
+    </div>
+          </div>
+          <!-- -----------personal info-------------- -->
+          <div class="col-md-6 mt-2">
+            <!-- ... (existing personal info code) ... -->
+          </div>
+          <!-- ... (rest of the code) ... -->
+        </div>
+      </div>
+      
+    <div class="container mb-5" id="resume-form">
+        <div class="row">
+            <!-- -----------presonal info-------------- -->
+            <div class="col-md-6 mt-2">
+                <h3 class="mt-2">Personal Info</h3>
+                
+
+                <div class="form-group">
+                    <label for="NameField">Enter Your  Name </label>
+                    <input type="text" id="NameField" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="gmailField"> Your Gmail </label>
+                    <input type="email" id="gmailField" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactField">Enter Your Contact Number</label>
+                    <input type="text" id="contactField" class="form-control">
+                </div>
+                <!-- -------------------address----------------- -->
+                <div class="form-group">
+                    <label for="AddressField">Address</label>
+                    <textarea rows="5" id="AddressField" class="form-control"></textarea>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="cityField">City</label>
+                            <input type="text" id="cityField" class="form-control">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="stateField">State</label>
+                            <input type="text" id="stateField" class="form-control">
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+                <!-- ------------------------social link--------------------- -->
+                
+
+                <div class="form-group">
+                    <label for="linkedinField">LinkedIn</label>
+                    <input type="text" id="linkedinField" class="form-control">
+                </div>
+
+            </div>
+            <!-- -------------------------Education-------------------- -->
+            <div class="col-md-6 mt-2">
+                <h3 class="mt-2">Education</h3>
+
+                <div class="form-group" id="eDu">
+                    <label for="">Education</label>
+                    <input type="text" class="form-control eField">
+                    <div class="container-fulid" id="eduBtn">
+                        <button onclick="addNewEduField()" class="Build">Add more</button>
+                    </div>
+                </div>
+                
+                <!-- -------------------Experience----------------- -->
+                <h3 class="mt-2">Experience</h3>
+
+                <div class="form-group" id="exp">
+                    <label for="">Experience</label>
+                    <input type="text"  class="form-control expField">
+                    <button onclick="addNewExpField()" class="Build" id="expbtn">Add more</button>
+                </div>
+                
+                <!-- ---------------Skills--------------- -->
+                <h3 class="mt-2">Skills</h3>
+
+                <div class="form-group" id="Skills">
+                    <label for="">Skills</label>
+                    <input type="text" class="form-control SkillsField">
+                    <button onclick="addNewSkillsField()" class="Build" id="skillsbtn">Add more</button>
+                </div>
+                
+                <!-- ---------------------projects--------------- -->
+                <h3 class="mt-2">Projects</h3>
+
+                <div class="form-group" id="prj">
+                    <label for="">Name Of Project</label>
+                    <input type="text" class="form-control projectField">
+                    <button onclick="addNewProjectField()" class="Build" id="projectbtn">Add more</button>
+                    
+                </div>
+                                                                            
+                <!-- -------------------------Achivements--------------------- -->
+                <h3 class="mt-2">Achivements</h3>
+
+                <div class="form-group" id="achiv">
+                    <label for="">Achivements</label>
+                    <input type="text" class="form-control AchiveField">
+                    <button onclick="addNewAchivField()" class="Build" id="achivebtn">Add more</button>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div class="container text-center mt-3">
+            <div onclick="buildResume()" class="btn btn-primary bt-lg">Build Resume</div>
+        </div>
+    </div>
+    
